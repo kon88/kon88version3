@@ -1,182 +1,240 @@
 .header {
    min-width: 100%;
-   min-height: 100%;
-   text-align: center;
-   background: lighten($light-purple, 5%);
-   margin: 0;
-   padding:0;
+   height: 100vh;
+   background: #515151;
    overflow: hidden;
-  
-}
-
-.wrapper {
-      padding-top: 30px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;  
 }
 
 .initial {
-      position: relative;
-      margin:0 auto;
-   width: 80px;
-   height: 80px;
+   font-size: 3em;
+   color: #fff;
+   padding: 10px 24px;   
    background: lighten(orange, 15%);
    border-radius: 50%;
-   
-   span {
-         position: absolute;
-         font-size: 3em;
-         color: lighten($light-purple, 5%);
-         left: 50%;
-         top: 50%;
-         transform: translate(-50%, -50%);
-      }
 }
 
 .header h1 {
    font-size: 5.4em;
-   margin: 0;
-   color: lighten(#515151,10%);
+   color: lighten(#515151,25%);
 
       span {
             position: relative;
             display: inline-block;
             white-space: pre;
 	      -webkit-font-smoothing:antialiased;
-      }
+      } //created by lettering js
 }
+
 .header h2 {
    font-family: $orbFont;
    font-size: 2.6em;
    color: $sky-blue;
 }
 
-.header .hello {
-      padding-top: 10px;
-}
-
 .header .btn {
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px auto 0px auto;
-      width: 140px;
-      height: 55px;
+      padding: 18px 30px;
       border: 2px solid $sky-blue;
-      color: $sky-blue;
+      color: #fff;
       border-radius: 5px;
 }
+
 .btn:hover {
       border: 2px solid #fff;
-      color: #fff;
-      background: $sky-blue;
+      color: #fff !important;
+      background: lighten(orange, 15%);
       transition: all .5s;
-}
-
-.header .icons {
-      margin: 30px auto;
-      text-align: center;
-      padding-bottom: 30px;
-
-      ul {
-            padding:0;
-      }
-      li {
-            padding: 15px;
-            font-size: 1.4em;
-            color: $sky-blue;
-      }
 }
 
 // End of header
 
 .projects {
-      margin: 60px auto;
-     padding-bottom: 1px;
+      padding-top: 40px;
+      padding-bottom: 100px;
+      background: $sky-blue;
       width: 100%;
-      text-align: center;
 
       h1 {
-            padding-top: 30px;
+            padding-top: 20px;
             color: #fff;
       }
 }
 
 .mySlider {
       margin: 40px auto;
-      width: 90%;
+      width: 95%;
       height: auto;
       display: block;
-           
-            .item img {
-                  width: 100%;
+      color: #fff;
+
+      .item .card{
+            margin: 0 auto;
+
+            .card-block .btn {
+                  border: 2px solid #fff;
             }
+      }
 }
 
-// End of slider
+.mySlider .slick-dots {
+      bottom: -60px;
+}
 
-// End of projexts
+// End of Responsive Templates
 
-.portfolio {
-      margin: 40px auto;
-      padding-bottom: 100px;
-      min-width: 100%;
-      min-height: 100%;  
-      text-align: center;
-      background: url('/img/sketching-gray2.jpg') no-repeat center center fixed;
-      background-size: cover;
+.c-pens {
+      padding-top: 80px;
       color: #fff;
+}
+
+.c-pens .container .row .cp-left {
+      padding-right: 28px;
+      h1 {
+            font-size: 4em;
+      }
+      p {
+            font-size: 1.6em;
+            color: lighten(#515151,45%);
+      }
+      a {
+            padding: 10px 20px;
+            border: 2px solid $sky-blue;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+      }
+      a:hover {
+      border: 2px solid #fff;
+      color: #fff !important;
+      background: lighten(orange, 15%);
+      transition: all .5s;
+      }
+}
+
+.c-pens .container .row .cp-right .cp-slider .slick-dots {
+      bottom: -40px;
+}
+
+//End of CodePen Section
+
+.video-section {
+      margin-top: 80px;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      max-height: 480px;
       overflow: hidden;
 
+      #video-elem {
+            width: 100%;
+      }
+}
+
+.video-textbox {
+      color: #fff;
+      position: absolute;
+      left: 60%;
+      top: 25%;
+      padding-bottom: 40px;
+      line-height: 2;
+
+      li {
+            list-style: none;
+            text-align: left;
+      }
+
+      a {
+            text-decoration: none;
+            padding: 16px;
+            color: #515151;
+            background: lighten(#515151,25%);
+            border: 2px solid $sky-blue;
+            border-radius: 5px;
+
+            &:hover {
+                  background: $sky-blue;
+                  color: white;   
+                  border: 2px solid #fff; 
+                  transition: all .5s;        
+            }
+      }
+}
+
+.video-section .video-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.4);
+}
+
+//End of Video Section
+
+.angular-projects {
+      padding-top: 40px;
+      padding-bottom: 100px;
+      background: $sky-blue;
+      width: 100%;
+
       h1 {
-            padding-top: 80px;
-            font-size: 2.4em;
-
-            span {
-                  display: inline-block;
-                  white-space: pre;
-            }
+            padding-top: 20px;
+            color: #fff;
       }
-  
 }
 
-.portfolio .pwrapper {
-      margin: 40px auto 0 auto;
+.mySlider2 {
+      margin: 40px auto;
       width: 95%;
-      overflow: hidden;      
-      
-      section {
-           display: flex;
-           justify-content: space-around;
-      }
+      height: auto;
+      display: block;
+      color: #fff;
 
-            .col1, .col2, .col3 {
-                  padding: 20px;
-                  flex: 1 0 0;
+      .item .card{
+            margin: 0 auto;
+
+            .card-block .btn {
+                  border: 2px solid #fff;
             }
-}
-
-.portfolio .pwrapper .initial2 {
-      position: relative;
-      margin:0 auto;
-   width: 80px;
-   height: 80px;
-   background: lighten(orange, 15%);
-   border-radius: 50%;
-   
-   #logo2 {
-         position: absolute;
-         font-size: 3em;
-         color: lighten($light-purple, 5%);
-         left: 50%;
-         top: 50%;
-         transform: translate(-50%, -50%);
       }
 }
 
-.portfolio .pwrapper section i {
-      font-size: 90px;
-      color: lighten(orange, 15%);
+.mySlider2 .slick-dots {
+      bottom: -60px;
 }
+
+// End Angular Section
+
+.about-section {
+      padding-top: 80px;
+      padding-bottom: 120px;
+      min-height: 100vh;
+      background: url('../img/sketching-gray2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow: hidden; 
+}
+
+.about-section .as-cont {
+      margin: 0 auto;
+     // background-color: lightgreen;
+
+      .about-left {
+            background: rgba(255, 255, 255, 0.8);
+            color: lighten(#515151,28%);
+            padding: 20px;
+      }
+
+      .about-right {
+            //background: greenyellow;
+            color: lighten(#515151,1%);
+            padding: 20px;
+      }
+}
+
 
 // End of portfolio
 
@@ -185,9 +243,7 @@ footer {
       height: 70px;
       padding:0;
       margin:-35px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include center-flex;
       color: #fff;
       font-size: 1.1em;
 
