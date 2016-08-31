@@ -9,12 +9,17 @@
    flex-direction: column;  
 }
 
+.header .header-logo {
+   -webkit-font-smoothing: antialiased;
+}
+
 .initial {
    font-size: 3em;
    color: #fff;
    padding: 10px 24px;   
    background: lighten(orange, 15%);
    border-radius: 50%;
+   -webkit-font-smoothing: antialiased;
 }
 
 .header h1 {
@@ -114,6 +119,10 @@
       }
 }
 
+.c-pens .container .row .cp-right .cp-slider .items {
+      width: 100%;
+}
+
 .c-pens .container .row .cp-right .cp-slider .slick-dots {
       bottom: -40px;
 }
@@ -209,7 +218,7 @@
 // End Angular Section
 
 .about-section {
-      padding-top: 80px;
+      padding-top: 100px;
       padding-bottom: 120px;
       min-height: 100vh;
       background: url('../img/sketching-gray2.jpg') no-repeat center center fixed;
