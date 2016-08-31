@@ -144,18 +144,6 @@ body {
   .video-textbox li {
     list-style: none;
     text-align: left; }
-  .video-textbox a {
-    text-decoration: none;
-    padding: 16px;
-    color: #515151;
-    background: #919191;
-    border: 2px solid #00b2ee;
-    border-radius: 5px; }
-    .video-textbox a:hover {
-      background: #00b2ee;
-      color: white;
-      border: 2px solid #fff;
-      transition: all .5s; }
 
 .video-section .video-overlay {
   position: absolute;
@@ -206,24 +194,6 @@ body {
   .about-section .as-cont .about-right {
     color: #545454;
     padding: 20px 0px 0px 40px; }
-
-footer {
-  background: #515151;
-  height: 70px;
-  padding: 0;
-  margin: -35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1.1em; }
-  footer section {
-    padding: 15px;
-    display: inline-block; }
-  footer li:first-of-type {
-    padding-right: 20px; }
-  footer li:hover {
-    color: #00b2ee; }
 
 @media only screen and (min-width: 1380px) {
   .header h1 {
