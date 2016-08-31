@@ -154,22 +154,6 @@
             list-style: none;
             text-align: left;
       }
-
-      a {
-            text-decoration: none;
-            padding: 16px;
-            color: #515151;
-            background: lighten(#515151,25%);
-            border: 2px solid $sky-blue;
-            border-radius: 5px;
-
-            &:hover {
-                  background: $sky-blue;
-                  color: white;   
-                  border: 2px solid #fff; 
-                  transition: all .5s;        
-            }
-      }
 }
 
 .video-section .video-overlay {
@@ -240,31 +224,10 @@
       .about-right {
             //background: greenyellow;
             color: lighten(#515151,1%);
-            padding: 20px;
+            padding: 20px 0px 0px 40px;
       }
 }
 
 
 // End of portfolio
-
-footer {
-      background: #515151;
-      height: 70px;
-      padding:0;
-      margin:-35px;
-      @include center-flex;
-      color: #fff;
-      font-size: 1.1em;
-
-      section {padding: 15px; display: inline-block;}
-
-            li:first-of-type {
-                  padding-right: 20px;
-            }
-
-                  li:hover {
-                        color: $sky-blue;
-                  }
-}
-
 
