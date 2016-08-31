@@ -1,17 +1,16 @@
 
 $(document).ready(function(){
 
-  (function scrollanim(){
+//var controller = new ScrollMagic.Controller();
 
-var controller = new ScrollMagic.Controller();
 $('.wbText').lettering();
 var letters = $('.wbText span');
 var headerLogo = $('.header .header-logo');
 var headerBtn = $('.header .header-button');
-var tl = new TimelineMax({delay: .75});
+var tl = new TimelineMax({delay: .5});
 
-tl.from(headerLogo, .75, {autoAlpha:0, rotation: 180, ease: Back.easeOut})
-.from(headerBtn, .75, {autoAlpha: 0, y: 50, ease: Back.easeOut}, "-=.5")
+tl.from(headerLogo, .85, {force3D:true, autoAlpha:0, y:-200, rotation: 180})
+.from(headerBtn, .85, {autoAlpha: 0, y: 50, ease: Back.easeOut}, "-=.5")
 .staggerFrom(letters, .25, {
   autoAlpha: 0,
   cycle: {
@@ -22,11 +21,13 @@ tl.from(headerLogo, .75, {autoAlpha:0, rotation: 180, ease: Back.easeOut})
   ease: Back.easeOut
 }, .1);
 
-var scene = new ScrollMagic.Scene({
+
+
+/*var scene = new ScrollMagic.Scene({
     triggerElement: ".header", offset:0
 }).setTween(tl).addTo(controller);
 
-/*var mobilePics = $('.mobile-section #angular, #ionic');
+var mobilePics = $('.mobile-section #angular, #ionic');
 var mobileH1 = $('.mobile-right h1');
 var mobileTL = new TimelineMax;
 
@@ -49,14 +50,13 @@ staggerFrom(footer, 1, {delay: .5, autoAlpha:0, rotation:180, scale:1.5},.2);
 var scene2 = new ScrollMagic.Scene({
     triggerElement: ".portfolio", offset:0
 }).setTween(tl2).addTo(controller); */
-})();
 
 // Slick Slider
 
 $('.mySlider').slick({
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
     cssEase: 'linear',
@@ -89,7 +89,7 @@ $('.mySlider2').slick({
     lazyLoad: 'ondemand',
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
     cssEase: 'linear',

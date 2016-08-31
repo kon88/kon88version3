@@ -6,31 +6,35 @@
    .header h2 {
       font-size: 3.2em;
    }
-   .mobile-section {
-      padding: 100px 140px;
-   }
-   .mobile-right h1 {
-      font-size: 3.4em;
-   }
 
-   .projects h1 {
-      font-size: 3.4em;
+   .about-section {
+      padding-top: 220px;
    }
-   .portfolio {
-      min-height: 900px;
-      h1 {
-         padding-top: 150px;
-         font-size: 5em;
+}   
+
+@media only screen and (max-width: 991px) {
+   .c-pens .container .row .cp-left h1 {
+      font-size: 2.6em;
+   }
+   .c-pens .container .row .cp-left p {
+         font-size: 1em;
       }
    }
-   .portfolio .pwrapper {
-      width:85%;
-   }
-   [class^="col"] {
-      font-size: 1.4em;
-   }
 
+@media only screen and (max-width: 767px) {
+   .c-pens .container .row .cp-right {
+      margin-top: 40px;
+   }
 }
+
+@media only screen and (max-width:727px) {
+   .video-textbox {
+
+      left: 5%;
+      top: 15%;
+   }
+}
+
 
 @media only screen and (min-width:520px) and (max-width:900px) {
    .initial {
@@ -47,31 +51,13 @@
    .header h2 {
       font-size: 1.8em;
    }
-   .header .icons {
-      padding-bottom: 1px;
+   .video-section {
+      min-height: 480px;
    }
-   .projects h1 {
-      padding-top: 1px;
+   .video-textbox {
+      left: 40%;
    }
-   
-   .portfolio {
-      min-height: 500px;
-         h1 {
-            padding-top: 40px;
-            font-size: 2em;
-         }
-         .pwrapper {
-            width: 60%;
-            height: 100%;
-            section {
-            flex-direction: column;
-            }
-            [class^="col"] {
-               margin-bottom: 20px;
-            }
-         }
-      }  
-   }
+}
 
    @media only screen and (max-width:519px) {
       .initial {
@@ -83,50 +69,13 @@
       }
    }
    .header h1 {
-      font-size: 3em;
+      font-size: 2.8em;
    }
    .header h2 {
       font-size: 1.4em;
    }
-   .header .icons {
-      padding-bottom: 0px;
+   .video-section {
+      min-height: 480px;
    }
-   .mobile-section {
-      padding: 40px 20px;
-      flex-direction: column;
-      margin: 0 auto;
    }
-   .mobile-section .mobile-left #angular img{
-      width: 80%;
-      padding-left: 60px
-   }
-   .mobile-section .mobile-left #ionic img{
-      padding-left: 40px;
-      width: 80%;
-   }
-   .mobile-section .mobile-right h1 {
-      font-size: 2em;
-   }
-   .projects h1 {
-      padding-top: 0px;
-   }
-   
-   .portfolio {
-      min-height: 500px;
-         h1 {
-            padding-top: 30px;
-            font-size: 1.6em;
-         }
-         .pwrapper {
-            width: 80%;
-            height: 100%;
-            section {
-            flex-direction: column;
-            }
-            [class^="col"] {
-               margin-bottom: 20px;
-            }
-         }
-      }  
-   }
-   
+

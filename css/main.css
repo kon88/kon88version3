@@ -35,12 +35,16 @@ body {
   align-items: center;
   flex-direction: column; }
 
+.header .header-logo {
+  -webkit-font-smoothing: antialiased; }
+
 .initial {
   font-size: 3em;
   color: #fff;
   padding: 10px 24px;
   background: #ffc04d;
-  border-radius: 50%; }
+  border-radius: 50%;
+  -webkit-font-smoothing: antialiased; }
 
 .header h1 {
   font-size: 5.4em;
@@ -114,6 +118,9 @@ body {
     background: #ffc04d;
     transition: all .5s; }
 
+.c-pens .container .row .cp-right .cp-slider .items {
+  width: 100%; }
+
 .c-pens .container .row .cp-right .cp-slider .slick-dots {
   bottom: -40px; }
 
@@ -182,7 +189,7 @@ body {
   bottom: -60px; }
 
 .about-section {
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 120px;
   min-height: 100vh;
   background: url("../img/sketching-gray2.jpg") no-repeat center center fixed;
@@ -223,21 +230,23 @@ footer {
     font-size: 7em; }
   .header h2 {
     font-size: 3.2em; }
-  .mobile-section {
-    padding: 100px 140px; }
-  .mobile-right h1 {
-    font-size: 3.4em; }
-  .projects h1 {
-    font-size: 3.4em; }
-  .portfolio {
-    min-height: 900px; }
-    .portfolio h1 {
-      padding-top: 150px;
-      font-size: 5em; }
-  .portfolio .pwrapper {
-    width: 85%; }
-  [class^="col"] {
-    font-size: 1.4em; } }
+  .about-section {
+    padding-top: 220px; } }
+
+@media only screen and (max-width: 991px) {
+  .c-pens .container .row .cp-left h1 {
+    font-size: 2.6em; }
+  .c-pens .container .row .cp-left p {
+    font-size: 1em; } }
+
+@media only screen and (max-width: 767px) {
+  .c-pens .container .row .cp-right {
+    margin-top: 40px; } }
+
+@media only screen and (max-width: 727px) {
+  .video-textbox {
+    left: 5%;
+    top: 15%; } }
 
 @media only screen and (min-width: 520px) and (max-width: 900px) {
   .initial {
@@ -249,22 +258,10 @@ footer {
     font-size: 4em; }
   .header h2 {
     font-size: 1.8em; }
-  .header .icons {
-    padding-bottom: 1px; }
-  .projects h1 {
-    padding-top: 1px; }
-  .portfolio {
-    min-height: 500px; }
-    .portfolio h1 {
-      padding-top: 40px;
-      font-size: 2em; }
-    .portfolio .pwrapper {
-      width: 60%;
-      height: 100%; }
-      .portfolio .pwrapper section {
-        flex-direction: column; }
-      .portfolio .pwrapper [class^="col"] {
-        margin-bottom: 20px; } }
+  .video-section {
+    min-height: 480px; }
+  .video-textbox {
+    left: 40%; } }
 
 @media only screen and (max-width: 519px) {
   .initial {
@@ -273,34 +270,8 @@ footer {
     .initial span {
       font-size: 2.4em; }
   .header h1 {
-    font-size: 3em; }
+    font-size: 2.8em; }
   .header h2 {
     font-size: 1.4em; }
-  .header .icons {
-    padding-bottom: 0px; }
-  .mobile-section {
-    padding: 40px 20px;
-    flex-direction: column;
-    margin: 0 auto; }
-  .mobile-section .mobile-left #angular img {
-    width: 80%;
-    padding-left: 60px; }
-  .mobile-section .mobile-left #ionic img {
-    padding-left: 40px;
-    width: 80%; }
-  .mobile-section .mobile-right h1 {
-    font-size: 2em; }
-  .projects h1 {
-    padding-top: 0px; }
-  .portfolio {
-    min-height: 500px; }
-    .portfolio h1 {
-      padding-top: 30px;
-      font-size: 1.6em; }
-    .portfolio .pwrapper {
-      width: 80%;
-      height: 100%; }
-      .portfolio .pwrapper section {
-        flex-direction: column; }
-      .portfolio .pwrapper [class^="col"] {
-        margin-bottom: 20px; } }
+  .video-section {
+    min-height: 480px; } }
